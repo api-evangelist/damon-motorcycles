@@ -1,8 +1,30 @@
 aid: damon-motorcycles
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/damon-motorcycles.png
 name: Damon Motorcycles
-description: Damon Motorcycles is a company surfaced as a portfolio company of techstars and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Damon Motorcycles (Damon Inc.) is a Vancouver, British Columbia electric
+  motorcycle company founded in 2017 by Jay Giraud and Dominique Kwong, and an
+  alumnus of the Techstars accelerator. Damon builds high-performance electric
+  motorcycles led by the HyperSport and HyperFighter models, and is known for two
+  safety and ergonomics technologies: CoPilot, a 360-degree advanced warning
+  system that uses radar, cameras, and sensors to alert riders to surrounding
+  hazards, and Shift, a transformable ergonomics system that adjusts the riding
+  position between commuter and sport stances. The company has faced significant
+  financial and going-concern difficulties, and its public web presence at
+  damon.com currently returns errors, so no developer portal, documentation, or
+  public API surface could be verified during enrichment. This profile is
+  maintained as a company record in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/damon-motorcycles/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +34,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Electric Vehicles
+- Motorcycles
+- Transportation
+- Hardware
+- Mobility
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/damon-motorcycles-domain-security.yml
 - type: Website
   url: https://damon.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
